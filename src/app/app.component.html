@@ -1,0 +1,33 @@
+<div class="slider">
+  <!-- <div>
+    <div (click)="goToPrevious()" class="leftArrow">❰</div>
+    <div (click)="goToNext()" class="rightArrow">❱</div>
+  </div> -->
+  <div class="slide">
+    {{ val.name }}
+    {{ val.value }}
+    {{ val.unit }}
+  </div>
+  <div class="dotsContainer">
+    <div
+      *ngFor="let slide of data; let slideIndex = index"
+      class="dot"
+      [class.active]="active == slideIndex"
+      (click)="goToSlide(slideIndex)"
+    ></div>
+  </div>
+</div>
+
+<div class="slider">
+  <div class="slide">
+   
+  </div>
+  <div class="dotsContainer">
+    <div
+      *ngFor="let slide of data; let slideIndex = index"
+      class="dot"
+      [class.active]="active == slideIndex"
+      (click)="goToSlide(slideIndex)"
+    ></div>
+  </div>
+</div>

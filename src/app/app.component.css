@@ -1,0 +1,36 @@
+.slide {
+  margin-top: 200px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 15px;
+  box-shadow: 0px 18px 160px #27e0e0;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  height: 100%;
+}
+
+.dotsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+.active {
+  background-color: green;
+}
